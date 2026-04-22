@@ -25,7 +25,7 @@ country_counts = df["fic"].value_counts().head(10)
 print("\n===== Top 10 Countries =====")
 print(country_counts)
 
-import matplotlib.pyplot as plta
+import matplotlib.pyplot as plt
 plt.figure(figsize=(10, 6))
 country_counts.sort_values().plot(kind="barh")
 plt.title("Top 10 Countries by Number of Firms (Compustat)")
